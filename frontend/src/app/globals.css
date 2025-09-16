@@ -50,3 +50,24 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Apply As button styles */
+.apply-button {
+  border: 1px solid #19A89D;
+  color: #19A89D;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: Poppins, var(--font-sans), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  background: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.apply-button:hover {
+  background: #19A89D;
+  color: #ffffff;
+  border-color: #19A89D;
+  box-shadow: 0 0 10px #19A89D;
+}
