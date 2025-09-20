@@ -5,7 +5,7 @@ import ExploreRoles from '@/components/ExploreRoles';
 import section3Image from './section3.svg';
 import AboutUs from './AboutUs';
 import Image from 'next/image';
-
+import History from './History'; 
 export default function Home() {
   return (
     <main>
@@ -39,12 +39,8 @@ export default function Home() {
         <ExploreRoles/>
       </section>
 
-      <section
-        id="portfolio"
-        className="h-screen bg-slate-300 flex flex-col justify-center items-center"
-      >
-        <h2 className="text-4xl font-bold text-slate-800">Section 4</h2>
-        <p className="mt-2 text-slate-600">Portofolio proyek kami.</p>
+      <section id="history">
+        <History />
       </section>
     </main>
   );
