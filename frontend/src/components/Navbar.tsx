@@ -26,12 +26,10 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md text-black px-14 py-4 md:px-28 flex justify-between items-center relative">
-      {/* Logo */}
       <div>
         <Image src="/assets/BSLC Logo.svg" alt="Logo" width={100} height={100} />
       </div>
 
-      {/* Desktop Menu */}
       <ul className="hidden md:flex gap-12 font-semibold text-base">
         {links.map((link) => (
           <li
@@ -47,14 +45,12 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* Hamburger Menu Button */}
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <HiOutlineX size={28} /> : <HiOutlineMenu size={30} />}
         </button>
       </div>
 
-      {/* Mobile Menu with slide-down animation */}
       <ul
         ref={menuRef}
         style={{
