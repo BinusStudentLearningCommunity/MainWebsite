@@ -3,29 +3,22 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Poppins, Tangerine } from 'next/font/google';
-
-// --- Import SVG Files ---
 import growthSvg from './growth.svg';
 import solutionSvg from './solution.svg';
 
-// --- Konfigurasi Font ---
-// Menambahkan '300' untuk font weight 'light'
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '600', '700'], // light, regular, semibold, bold
+  weight: ['300', '400', '600', '700'], 
 });
 
-// Memuat font Tangerine dengan ketebalan bold (700)
 const tangerine = Tangerine({
   subsets: ['latin'],
   weight: ['700'],
 });
 
 
-// Tipe data untuk tahun agar lebih aman
 type Year = '2007' | '2012' | '2014';
 
-// Data konten untuk setiap tahun, agar mudah dikelola
 const historyContent = {
   '2007': {
     content: (
@@ -55,9 +48,7 @@ const History = () => {
   const years: Year[] = ['2007', '2012', '2014'];
 
   return (
-    // Terapkan font Poppins ke seluruh section
     <section className={`relative w-full text-center py-16 md:py-24 px-4 overflow-hidden bg-white ${poppins.className}`}>
-      {/* Elemen Dekoratif menggunakan SVG */}
       <Image
         src={solutionSvg}
         alt="Decorative background element"
@@ -73,7 +64,6 @@ const History = () => {
 
       <div className="container max-w-4xl mx-auto relative z-10">
         <header>
-          {/* Terapkan font Tangerine ke subtitle History */}
           <h3 className={`text-5xl text-[#19A89D] italic ${tangerine.className}`}>
             History
           </h3>
@@ -93,7 +83,6 @@ const History = () => {
               <div key={year} className="flex flex-col items-center gap-4">
                 <button
                   onClick={() => setActiveYear(year)}
-                  // Mengubah font menjadi Poppins Light (font-light)
                   className={`text-2xl md:text-3xl font-light transition-colors duration-300 ${
                     activeYear === year ? 'text-[#19A89D]' : 'text-slate-300 hover:text-[#19A89D]'
                   }`}

@@ -1,46 +1,44 @@
-// src/app/home/page.tsx
 
-import mainImage from './mainImage.svg';
-import ExploreRoles from '@/components/ExploreRoles';
-import section3Image from './section3.svg';
-import AboutUs from './AboutUs';
-import Image from 'next/image';
-import History from './History'; 
+import mainImage from "./mainImage.svg";
+import ExploreRoles from "@/components/ExploreRoles";
+import AboutUs from "./AboutUs";
+import Image from "next/image";
+import History from "./History";
+import Contact from "./Contact";
+import Hero from "./Hero";
+import Wheel from "./Wheel";
+import VisionMission from "./VisionMission"; 
+
 export default function Home() {
   return (
     <main>
+      <Hero backgroundImageSrc={mainImage} />
+
       <div className="relative">
-        <section id="home">
-          <Image
-            src={mainImage}
-            alt="Home"
-            className="w-full h-auto"
-            priority 
-          />
-        </section>
-
         <AboutUs />
-        
       </div>
-
-      <section id="services" className="bg-slate-200">
-        <Image
-          src={section3Image} 
-          alt="Services"
-          className="w-full h-auto"
-        />
+      <section id="visimisi">
+        <VisionMission />
       </section>
 
       <section
         id="about"
         className="bg-slate-100 flex flex-col justify-center items-center text-center px-4"
-        style={{ paddingTop: '2rem', paddingBottom: '2rem' }}
+        style={{ paddingTop: "2rem", paddingBottom: "2rem" }}
       >
-        <ExploreRoles/>
+        <ExploreRoles />
       </section>
 
       <section id="history">
         <History />
+      </section>
+
+      <section id="wheel">
+        <Wheel />
+      </section>
+
+      <section id="contact-form">
+        <Contact />
       </section>
     </main>
   );
