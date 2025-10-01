@@ -7,6 +7,7 @@
   --aqua: #19A89D;
   --aqua-hover: rgba(25, 168, 157, 0.75);
   --yellow: #FFFF84;
+  --dark-green: #095754;
   --cyan: #77FFF5;
   --gray-900: #3C3C3C;
   --gray-800: #424242;
@@ -14,6 +15,27 @@
   --gray-600: #7B7B7B;
 
   --shadow-md: 0px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+  font-family: "Tangerine";
+  src: url("/fonts/Tangerine-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @theme inline {
@@ -26,14 +48,18 @@
 
   --color-yellow: var(--yellow);
   --color-cyan: var(--cyan);
+  --color-dark-green: var(--dark-green);
 
   --color-gray-900: var(--gray-900);
   --color-gray-800: var(--gray-800);
   --color-gray-700: var(--gray-700);
   --color-gray-600: var(--gray-600);
-
+  
+  --font-poppins: "Poppins";
+  --font-poppins-bold: "Poppins Bold";
   --font-sans: var(--font-poppins);
-
+  --font-tangerine: "Tangerine", cursive;
+  
   /* --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono); */
 }
