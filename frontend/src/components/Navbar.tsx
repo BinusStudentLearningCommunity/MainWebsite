@@ -25,7 +25,7 @@ export default function Navbar() {
   }, [menuRef, isOpen]);
 
   return (
-    <nav className="bg-white shadow-md text-black px-14 py-4 md:px-28 flex justify-between items-center relative">
+    <nav className="sticky top-0 bg-white shadow-md text-black px-14 py-4 md:px-28 flex justify-between items-center z-50">
       <div>
         <Image src="/assets/BSLC Logo.svg" alt="Logo" width={100} height={100} />
       </div>

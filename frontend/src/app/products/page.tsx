@@ -104,27 +104,26 @@ export default function Products() {
         </section>
 
         {/* Background Image Section - FIXED AGAR TIDAK TERPOTONG */}
-        <section className="py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-16 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg bg-white">
+          <div className="w-full mx-auto sm:max-w-full">
+            <div className="relative w-full shadow-lg bg-white">
               {/* Container dengan height yang pas */}
               <div className="relative w-full">
                 {/* Padding bottom trick untuk maintain aspect ratio */}
-                <div className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px]">
+                <div className="relative w-full h-[235px] sm:h-[100px] md:h-[430px] lg:h-[570px] xl:h-[795px]">
                   {/* Background Image dengan object-contain agar tidak terpotong */}
                   <div className="absolute inset-0">
                     <Image
                       src="/assets/bslc-bg.svg"
                       alt="BSLC Background"
                       fill
-                      className="object-contain"
+                      className="object-cover object-top"
                       priority
                       sizes="100vw"
                     />
                   </div>
                   
                   {/* Overlay Konten - Centered dan responsif */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10 pb-28 md:pb-48">
                     <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 md:mb-4 lg:mb-6 text-gray-800 leading-tight">
                       <span className="font-normal">Start</span>{" "}
                       <span className="font-extrabold">exciting</span>
@@ -146,7 +145,6 @@ export default function Products() {
               </div>
             </div>
           </div>
-        </section>
       </main>
     </div>
   );
