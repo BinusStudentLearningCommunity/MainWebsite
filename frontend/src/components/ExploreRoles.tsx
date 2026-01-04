@@ -151,7 +151,7 @@ const ExploreRoles = () => {
               </div>
             </div>
           </div>
-          <button className="apply-button mt-12 py-3 px-8 font-semibold rounded-lg capitalize">
+          <button className="apply-button mt-12 py-3 px-8 font-semibold rounded-lg capitalize cursor-pointer">
             Apply As {activeTab}
           </button>
         </div>
