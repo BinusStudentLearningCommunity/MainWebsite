@@ -35,7 +35,7 @@ export default function Navbar() {
           <li
             key={link.href}
             className={
-              pathname === link.href
+              pathname === link.href || (link.href === "/events" && pathname.startsWith("/article"))
                 ? "text-aqua"
                 : "hover:text-aqua-hover transition-colors duration-300 ease-out"
             }
@@ -62,12 +62,11 @@ export default function Navbar() {
           <li
             key={link.href}
             className={`
-              ${pathname === link.href ? "text-aqua" : "text-black"}
+              ${pathname === link.href || (link.href === "/events" && pathname.startsWith("/article")) ? "text-aqua" : "text-black"}
               transition-colors duration-300 ease-out pb-3
               hover:text-aqua-hover
               active:text-aqua
               focus:text-aqua
-              
             `}
             onClick={() => setIsOpen(false)}
           >
