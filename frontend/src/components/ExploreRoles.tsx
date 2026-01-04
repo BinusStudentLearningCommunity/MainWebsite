@@ -83,7 +83,7 @@ const ExploreRoles = () => {
             <button
               key={role}
               onClick={() => setActiveTab(role)}
-              className={`py-3 px-6 text-lg font-poppins font-semibold capitalize transition-colors duration-300 ${
+              className={`py-3 px-6 text-lg font-poppins font-semibold capitalize transition-colors duration-300 cursor-pointer ${
                 activeTab === role
                   ? 'text-aqua border-b-2 border-aqua'
                   : 'text-slate-500 hover:text-slate-800'
@@ -132,16 +132,16 @@ const ExploreRoles = () => {
                         return (
                           <span
                             key={index}
-                            className="group relative inline-flex items-center rounded-lg px-3 py-2 text-white font-normal cursor-pointer w-60"
+                            className="group relative inline-flex items-center rounded-lg px-3 py-2 text-white font-normal w-60"
                             style={{ backgroundColor: meta.bg }}
                           >
-                            <span className="flex items-center transition-opacity duration-150 group-hover:opacity-0">
-                              <Image src={meta.icon} alt={`${division} icon`} width={20} height={20} className="mr-2" />
+                            {/* <span className="flex items-center transition-opacity duration-150 group-hover:opacity-0">
+                              <Image src={meta.icon} alt={`${division} icon`} width={20} height={20} className="mr-2" /> */}
                               {division}
-                            </span>
-                            <span className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+                            {/* </span> */}
+                            {/* <span className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-150 group-hover:opacity-100">
                               View Details
-                            </span>
+                            </span> */}
                           </span>
                         );
                       })}
@@ -151,9 +151,9 @@ const ExploreRoles = () => {
               </div>
             </div>
           </div>
-          <button className="apply-button mt-12 py-3 px-8 font-semibold rounded-lg capitalize cursor-pointer">
+          {/* <button className="apply-button mt-12 py-3 px-8 font-semibold rounded-lg capitalize cursor-pointer">
             Apply As {activeTab}
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
