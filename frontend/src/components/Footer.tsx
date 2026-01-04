@@ -8,12 +8,12 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <p className="text-base font-regular">Contact Us</p>
           <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
-            <a href="#"><Image src="/assets/social-media-logo/youtube.svg" alt="YouTube" width={25} height={25} /></a>
-            <a href="#"><Image src="/assets/social-media-logo/x.svg" alt="X" width={25} height={25} /></a>
-            <a href="#"><Image src="/assets/social-media-logo/linkedln.svg" alt="LinkedIn" width={25} height={25} /></a>
-            <a href="#"><Image src="/assets/social-media-logo/facebook.svg" alt="Facebook" width={25} height={25} /></a>
-            <a href="#"><Image src="/assets/social-media-logo/instagram.svg" alt="Instagram" width={25} height={25} /></a>
-            <a href="#"><Image src="/assets/social-media-logo/email.svg" alt="Email" width={25} height={25} /></a>
+            <a href="https://www.youtube.com/c/BinusStudentLearningCommunity" target="_blank"><Image src="/assets/social-media-logo/youtube.svg" alt="YouTube" width={25} height={25} /></a>
+            <a href="https://twitter.com/BSLC_BINUS" target="_blank"><Image src="/assets/social-media-logo/x.svg" alt="X" width={25} height={25} /></a>
+            <a href="https://id.linkedin.com/company/binus-student-learning-community" target="_blank"><Image src="/assets/social-media-logo/linkedln.svg" alt="LinkedIn" width={25} height={25} /></a>
+            <a href="https://www.facebook.com/BinusStudentLearningCommunity/" target="_blank"><Image src="/assets/social-media-logo/facebook.svg" alt="Facebook" width={25} height={25} /></a>
+            <a href="https://www.instagram.com/bslc_binus/" target="_blank"><Image src="/assets/social-media-logo/instagram.svg" alt="Instagram" width={25} height={25} /></a>
+            <a href="mailto:bslccommunity@gmail.com" target="_blank"><Image src="/assets/social-media-logo/email.svg" alt="Email" width={25} height={25} /></a>
           </div>
         </div>
 
