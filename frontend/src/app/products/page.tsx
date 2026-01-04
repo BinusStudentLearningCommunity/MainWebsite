@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Products() {
   return (
@@ -25,15 +26,18 @@ export default function Products() {
                   untuk dipelajari. E-Learning akan{" "}
                   <strong>diupdate setiap menjelang UTS dan UAS</strong>. Dengan adanya rangkuman dan catatan soal-soal ini diharapkan Binusian dapat terbantu menyiapkan dirinya sebelum UTS dan UAS, sehingga dapat memperoleh hasil yang memuaskan dalam ujian.
                 </p>
-                <button
-                  className="bg-white border-2 py-2 md:py-3 px-6 md:px-8 rounded-lg transition-colors duration-200 font-medium text-base md:text-lg hover:bg-teal-600 hover:text-white"
+                <Link
+                  href="https://elearning.bslc.or.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white border-2 py-2 md:py-3 px-6 md:px-8 rounded-lg transition-colors duration-200 font-medium text-base md:text-lg hover:bg-teal-600 hover:text-white"
                   style={{
                     borderColor: "#19A89D",
                     color: "#19A89D",
                   }}
                 >
                   View Materials
-                </button>
+                </Link>
               </div>
               
               {/* Image - Paksa muncul di SEMUA ukuran termasuk mobile kecil */}
@@ -73,15 +77,18 @@ export default function Products() {
                   atau latihan soal untuk persiapan UTS dan UAS. 
                   Dengan adanya responsi ini diharapkan Binusian dapat terbantu menyiapkan dirinya sebelum UTS dan UAS, sehingga dapat memperoleh hasil yang memuaskan dalam ujian.
                 </p>
-                <button
-                  className="bg-white border-2 py-2 md:py-3 px-6 md:px-8 rounded-lg transition-colors duration-200 font-medium text-base md:text-lg hover:bg-teal-600 hover:text-white"
+                <Link
+                  href="https://chat.whatsapp.com/HJAckP7xhbLJxnYWqyKyXk?mode=wwt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-center bg-white border-2 py-2 md:py-3 px-6 md:px-8 rounded-lg transition-colors duration-200 font-medium text-base md:text-lg hover:bg-teal-600 hover:text-white"
                   style={{
                     borderColor: "#19A89D",
                     color: "#19A89D",
                   }}
                 >
                   Join Responsi
-                </button>
+                </Link>
               </div>
               
               {/* Image - Paksa muncul di SEMUA ukuran termasuk mobile kecil */}
@@ -133,7 +140,7 @@ export default function Products() {
                     </h1>
 
                     <a
-                      href="https://discord.gg/xxxxx"
+                      href="https://discord.com/invite/5e37zmu4aA"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block font-semibold px-5 md:px-7 lg:px-8 py-2.5 md:py-3 text-xs sm:text-sm md:text-base rounded-lg border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 mt-2 md:mt-3 lg:mt-4"
