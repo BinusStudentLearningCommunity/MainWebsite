@@ -4,6 +4,37 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
+const recentArticles = [
+  {
+    title: "Title of Article 1",
+    description: "Description of Article 1",
+    date: "18 June 2025",
+    imageUrl: "/assets/article-1-thumb.svg",
+    href: "/article/1",
+  },
+  {
+    title: "Title of Article 2",
+    description: "Description of Article 2",
+    date: "19 June 2025",
+    imageUrl: "/assets/article-2-thumb.svg",
+    href: "/article/2",
+  },
+  {
+    title: "Title of Article 3",
+    description: "Description of Article 3",
+    date: "20 June 2025",
+    imageUrl: "/assets/article-3-thumb.svg",
+    href: "/article/3",
+  },
+  {
+    title: "Title of Article 4",
+    description: "Description of Article 3",
+    date: "21 June 2025",
+    imageUrl: "/assets/article-4-thumb.svg",
+    href: "/article/4",
+  },
+];
+
 export default function events() {
   const [currIndex, setCurrIndex] = useState(0);
 
@@ -178,14 +209,14 @@ export default function events() {
           </div>
         </motion.div>
 
-        {/* Recent Articles */}
+        {/* Recent Articles Section */}
         <div className="min-h-screen text-white p-6 sm:p-10">
           <p className="w-full text-2xl sm:text-3xl p-4 sm:p-8">
             Recent Articles
           </p>
 
           <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-6">
-            {[...Array(4)].map((_, idx) => ( //sementara pake Array, kalo mau tambahin bisa pake list
+            {recentArticles.map((article, idx) => ( 
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 50 }}
@@ -195,11 +226,11 @@ export default function events() {
                 className="w-full sm:w-[48%] flex justify-center"
               >
                 <ArticleCard
-                  title="Title of the Article"
-                  description="Description of the article Lorem ipsum..."
-                  date="31 February 2025"
-                  imageUrl="/file.svg"
-                  href="/article"
+                  title={article.title}
+                  description={article.description}
+                  date={article.date}
+                  imageUrl={article.imageUrl}
+                  href={article.href}
                 />
               </motion.div>
             ))}
