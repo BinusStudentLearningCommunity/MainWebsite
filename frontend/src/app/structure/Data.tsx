@@ -252,7 +252,7 @@ export const InformationTechnology: Person[] = [
     ],
     role: "Manager IT Development / Region",
     instagram: "https://instagram.com/kelson_vincien",
-    linkedin: "www.linkedin.com/in/kelson-vincien",
+    linkedin: "https://www.linkedin.com/in/kelson-vincien",
     size: "sm",
   },
   {
