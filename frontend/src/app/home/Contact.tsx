@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { Poppins, Syne } from 'next/font/google';
 
 const poppins = Poppins({
@@ -15,6 +16,24 @@ const syne = Syne({
 const inputStyle = `w-full bg-transparent border-b border-gray-500 text-white placeholder-gray-400 focus:border-[#19A89D] focus:outline-none transition duration-300 py-3 ${poppins.className}`;
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    body: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const mailtoLink = `mailto:bslccommunity@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.body}`)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section 
       id="contact" 
@@ -36,26 +55,26 @@ const Contact = () => {
           </p>
         </div>
 
-        <form className="w-full">
+        <form className="w-full" onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row gap-x-8 gap-y-10">
             <div className="flex-1 flex flex-col gap-10">
               <div>
                 <label htmlFor="name" className="sr-only">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Input Your Name" className={inputStyle} />
+                <input type="text" id="name" name="name" placeholder="Input Your Name" className={inputStyle} onChange={handleChange} required/>
               </div>
               <div>
                 <label htmlFor="email" className="sr-only">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="Input Your Email" className={inputStyle} />
+                <input type="email" id="email" name="email" placeholder="Input Your Email" className={inputStyle} onChange={handleChange} required/>
               </div>
               <div>
                 <label htmlFor="subject" className="sr-only">Email Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Input Email Subject" className={inputStyle} />
+                <input type="text" id="subject" name="subject" placeholder="Input Email Subject" className={inputStyle} onChange={handleChange} required/>
               </div>
             </div>
             <div className="flex-1 flex flex-col">
               <div className="flex-grow">
                 <label htmlFor="body" className="sr-only">Email Body</label>
-                <textarea id="body" name="body" rows={8} placeholder="Input Email Body" className={`${inputStyle} h-full`}></textarea>
+                <textarea id="body" name="body" rows={8} placeholder="Input Email Body" className={`${inputStyle} h-full`} onChange={handleChange} required></textarea>
               </div>
               <div className="text-right mt-8">
                 <button 
