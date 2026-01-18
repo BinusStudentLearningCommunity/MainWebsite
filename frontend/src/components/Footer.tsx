@@ -23,7 +23,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-base font-regular">
-        <p>Copyright © 2025 BINUS Student Learning Community. All rights reserved.</p>
+        <p>Copyright © 2026 BINUS Student Learning Community. All rights reserved.</p>
       </div>
     </footer>
   );
