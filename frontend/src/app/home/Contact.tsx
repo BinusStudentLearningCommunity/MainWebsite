@@ -51,7 +51,7 @@ const Contact = () => {
             Touch <span aria-hidden="true" className="ml-2">→</span>
           </h2>
           <p className={`mt-4 text-lg text-white ${poppins.className}`}>
-            Let's Build Something Together
+            Let&apos;s Build Something Together
           </p>
         </div>
 
