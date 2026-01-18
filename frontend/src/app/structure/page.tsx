@@ -9,7 +9,7 @@ export default function Structure() {
       <header className="mx-10 md:mx-30 my-10">
         <h6 className="text-aqua font-tangerine">Organization Structure</h6>
         <h1 className="text-3xl font-bold py-3">Let&apos;s Meet our Team</h1>
-        <p>kindly click picture for contact information</p>
+        <p>BSLC 2025/2026</p>
       </header>
 
       <div className="mt-10 mb-40">
