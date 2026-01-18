@@ -26,9 +26,9 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 bg-white shadow-md text-black px-14 py-4 md:px-28 flex justify-between items-center z-50">
-      <div>
-        <Image src="/assets/BSLC Logo.svg" alt="Logo" width={100} height={100} />
-      </div>
+      <a href="/home">
+        <Image src="/assets/BSLC Logo.svg" alt="Logo" width={100} height={100}/>
+      </a>
 
       <ul className="hidden md:flex gap-12 font-semibold text-base">
         {links.map((link) => (
