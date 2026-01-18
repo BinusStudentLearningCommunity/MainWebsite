@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 'use client';
 import ArticleCard from '@/components/ArticleCard';
 import { motion } from 'framer-motion';
@@ -51,32 +52,32 @@ export default function events() {
     },
     {
       title: 'Pengabdian Kepada Masyarakat (PKM)',
-      image: '/assets/events-img/3.jpg',
+      image: '/assets/events-img/PKM.jpg',
       desc: 'Pengabdian Kepada Masyarakat (PKM) merupakan program kemanusiaan yang diadakan BSLC dengan target peserta merupakan anak-anak Indonesia yang kurang mampu mengenyam pendidikan. Kegiatan ini bertujuan untuk meningkatkan rasa empati dan simpati sosial bagi anggota BSLC (Nindya) terhadap lingkungan sekitarnya.',
     },
     {
       title: 'Welcoming Party',
-      image: '/assets/events-img/4.jpeg',
+      image: '/assets/events-img/welpar.jpg',
       desc: 'Welcoming Party adalah program untuk menyambut para member baru BSLC sehingga dapat lebih mengenal BSLC serta dapat aktif berpartisipasi di dalamnya. Program ini dilangsungkan dengan pemaparan materi mengenai BSLC dan program kerja yang telah berjalan selama 1 tahun kepengurusan, dilanjutkan dengan sesi sharing, kemudian games yang dapat membangun kekompakkan.',
     },
     {
       title: 'BSLC Competition',
-      image: '/assets/events-img/5.png',
+      image: '/assets/events-img/S2C.png',
       desc: 'BSLC Competition adalah sebuah program kerja yang bertujuan untuk menciptakan sebuah kompetisi pendidikan di tingkat nasional. Program ini diharapkan mampu meningkatkan kemampuan berpikir kritis mahasiswa/i di Indonesia.',
     },
     {
       title: 'Career Preparation',
-      image: '/assets/events-img/6.png',
+      image: '/assets/events-img/carprep.png',
       desc: 'Career Preparation adalah program kerja yang terdiri dari sesi seminar dan workshop mengenai CV, Interview, LinkedIn, dan program persiapan kerja lainnya. Diselenggarakannya program kerja ini adalah untuk menjadi wadah yang dapat membantu mahasiswa dalam mempersiapkan kebutuhan dunia kerja setelah lulus.',
     },
     {
       title: 'Birthday Party',
-      image: '/assets/events-img/7.png',
+      image: '/assets/events-img/birthdayparty.jpg',
       desc: 'Birthday Party BSLC adalah kegiatan tahunan yang dilakukan untuk merayakan hari ulang tahun BSLC pada tanggal 28 Oktober. Dalam Birthday Party ini, anggota BSLC (Nindya) diajak makan bersama serta bermain games untuk semakin mempererat hubungan para Nindya. Event ini sangat asyik dilakukan secara offline.',
     },
     {
       title: 'Benchmarking',
-      image: '/assets/events-img/8.jpeg',
+      image: '/assets/events-img/benchmark.JPG',
       desc: 'Benchmarking adalah program studi banding dan sesi sharing antara BSLC dan organisasi partner. Tujuan diselenggarakannya program kerja ini adalah sebagai sarana bagi BSLC untuk bisa mengevaluasi kinerja dengan belajar dari organisasi dari BINUS maupun universitas lain, serta untuk menjalin kerjasama dengan unit kemahasiswaan di luar BINUS.',
     },
     {
