@@ -17,7 +17,7 @@ const tangerine = Tangerine({
 });
 
 
-type Year = '2007' | '2012' | '2014';
+type Year = '2007' | '2012' | '2025';
 
 const historyContent = {
   '2007': {
@@ -34,10 +34,10 @@ const historyContent = {
       </>
     ),
   },
-  '2014': {
+  '2025': {
     content: (
       <>
-        Konten untuk tahun 2014. Anda bisa menambahkan deskripsi yang sesuai di sini. BSLC terus berinovasi untuk memberikan dampak yang lebih besar bagi komunitas mahasiswa.
+        BSLC melakukan <strong>rekonstruksi visi dan misi</strong> sebagaimana seperti yang tertulis sekarang. BSLC juga <strong>kembali mengadakan Kelas Responsi</strong> dengan total lebih dari 2000 peserta di seluruh BINUS.
       </>
     ),
   },
@@ -45,7 +45,7 @@ const historyContent = {
 
 const History = () => {
   const [activeYear, setActiveYear] = useState<Year>('2007');
-  const years: Year[] = ['2007', '2012', '2014'];
+  const years: Year[] = ['2007', '2012', '2025'];
 
   return (
     <section className={`relative w-full text-center py-16 md:py-24 px-4 overflow-hidden bg-white ${poppins.className}`}>

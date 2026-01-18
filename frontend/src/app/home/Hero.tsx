@@ -40,7 +40,7 @@ const Hero = ({ backgroundImageSrc }: { backgroundImageSrc: string }) => {
         <p
           className={`font-light text-white text-lg md:text-xl tracking-widest uppercase ${poppins.className}`}
         >
-          BINUS STUDENT LEARNING CENTER
+          BINUS STUDENT LEARNING COMMUNITY
         </p>
 
         <h1

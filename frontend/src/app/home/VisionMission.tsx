@@ -57,10 +57,10 @@ const VisionMission = () => {
               <p
                 className={`mt-4 text-base md:text-lg text-gray-700 ${poppins.className}`}
               >
-                BSLC menjadi Unit Kegiatan Mahasiswa (UKM) bertaraf nasional
-                pada tahun 2025 dan sebagai rekan belajar bagi binusian dan
-                non-binusian dalam melakukan pengembangan diri di organisasi
-                maupun lingkungan sekitar.
+                Menjadi komunitas belajar yang unggul dan kolaboratif
+untuk menghasilkan generasi berprestasi melalui
+pengembangan akademik, keterampilan, dan
+kepemimpinan yang berdampak bagi masyarakat.
               </p>
             </div>
           </div>
@@ -81,21 +81,22 @@ const VisionMission = () => {
                 className={`mt-4 space-y-3 text-base md:text-lg text-gray-700 list-disc list-inside ${poppins.className}`}
               >
                 <li>
-                  Berkontribusi dalam bidang pendidikan di BINUS University
-                  dengan menciptakan suasana belajar yang menyenangkan
+                  Menyediakan program pembelajaran yang
+menyenangkan, suportif, dan inklusif di lingkungan
+kampus untuk mendukung akademik mahasiswa BINUS.
                 </li>
                 <li>
-                  Menjadi wadah yang dapat membantu mahasiswa aktif BINUS
-                  University untuk mengembangkan potensi-potensi yang ada dalam
-                  diri baik softskill maupun hardskill
+                  Mengembangkan ekosistem organisasi yang adaptif,
+profesional, dan berintegritas.
                 </li>
                 <li>
-                  Bekerjasama dengan berbagai komunitas nasional dan
-                  internasional untuk mengenalkan BSLC di luar BINUS University
+                  Mendorong pertumbuhan soft skill dan employability
+melalui pengalaman belajar kolaboratif dan berdampak.
                 </li>
                 <li>
-                  Mengikuti dan mengadakan kompetisi bidang pendidikan bertaraf
-                  nasional.
+                  Memberikan kontribusi nyata di lingkungan sosial
+melalui program edukasi dan pemberdayaan
+masyarakat.
                 </li>
               </ul>
             </div>
