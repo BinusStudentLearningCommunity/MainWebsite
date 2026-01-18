@@ -31,7 +31,7 @@ const AboutUs = () => {
         kemahasiswaan yang berfokus pada bidang penalaran. Sejak pendiriannya
         di tahun 2008, BSLC terus berkembang sebagai <strong className="font-bold">rekan belajar bagi para Binusian </strong>
         dalam menciptakan suasana belajar yang menyenangkan salah satunya melalui program mentoring. Sebagai sebuah komunitas belajar,
-        BSLC juga berperan untuk meningkatkan soft skill dan hard skill mahasiswa terutama di bidang Academic, Employability, dan Organizational.
+        BSLC juga berperan untuk meningkatkan soft skill dan hard skill mahasiswa terutama di bidang <strong className="font-bold">Academic, Employability, dan Organizational.</strong>
       </p>
     </div>
   );
