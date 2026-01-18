@@ -40,7 +40,7 @@ export default function Article() {
             
         <p className="text-sm sm:text-md leading-relaxed text-[#3c3c3c] mt-6 lg:mt-0">
           Pada bulan Juni 2025, BSLC menyelenggarakan Latihan Dasar Kepemimpinan Calon Pengurus (LDK CP) yang rutin diadakan setiap tahunnya. 
-          LDK CP tahun ini mengusung tema "Growing Leadership Skills for a Successful Organization". Tema ini bertujuan untuk membekali calon pengurus BSLC 
+          LDK CP tahun ini mengusung tema &quot;Growing Leadership Skills for a Successful Organization&quot;. Tema ini bertujuan untuk membekali calon pengurus BSLC 
           dengan keterampilan kepemimpinan yang esensial dan pola pikir strategis yang diperlukan untuk memimpin secara efektif dan memastikan kesuksesan organisasi di lingkungan yang dinamis.
         </p>
 
@@ -74,7 +74,7 @@ export default function Article() {
         </div>
 
         <h3 className="font-semibold text-xl sm:text-2xl text-left mt-6 sm:mt-8 lg:mt-10">
-          BSLC LDK CP 2025 Sesi 1: "Strategic Management"        
+          BSLC LDK CP 2025 Sesi 1: &quot;Strategic Management&quot;        
         </h3>
 
         <p className="text-sm sm:text-md leading-relaxed text-[#3c3c3c] mt-4 sm:mt-6 lg:mt-10">
@@ -92,7 +92,7 @@ export default function Article() {
         </div>
 
         <h3 className="font-semibold text-xl sm:text-2xl text-left mt-6 sm:mt-8 lg:mt-10">
-          BSLC LDK CP 2025 Sesi 2: "Regeneration" 
+          BSLC LDK CP 2025 Sesi 2: &quot;Regeneration&quot; 
         </h3>
 
         <p className="text-sm sm:text-md leading-relaxed text-[#3c3c3c] mt-4 sm:mt-6 lg:mt-10">
